@@ -1,0 +1,117 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container-fluid p-0">
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark m-0" style="padding-left:20px;padding-right:20px; ">
+      <a class="navbar-brand" href="#">Red Hat Patterns</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.redhat.com/architect/portfolio/" target="_patterns">Portfolio Architectures &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.redhat.com/architect/portfolio/" target="_patterns">Solution Patterns
+              &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://hybrid-cloud-patterns.io/" target="_patterns">Validated Patterns </a>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid m-3">
+    <div class="row">
+      <div class="col-md-3 filter ">
+
+
+        <!-- BEGIN FILTER BY CATEGORY -->
+        <div style="padding:10px"></div>
+        <h4>Choose Patterns:</h4>
+        <div class="checkbox">
+          <label><input type="checkbox" class="icheck"> Portfolio Architecture</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="icheck"> Solution Patterns</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="icheck"> Validated Patterns</label>
+        </div>
+        <!-- END FILTER BY CATEGORY -->
+
+        <!-- BEGIN FILTER BY DATE -->
+        <div style="padding:20px"></div>
+        <h4>Filter By Pattern Type</h4>
+        <button type="button" class="btn btn-light btn-sm pattern-type-btn">
+          Validated
+        </button> &nbsp;
+        <button type="button" class="btn btn-white btn-sm pattern-type-btn">
+          Community
+        </button>
+
+        <!-- BEGIN FILTER BY Industry -->
+        <div style="padding:20px"></div>
+        <h4>Filter by Industry</h4>
+        <div class="checkbox">
+          <label><input type="checkbox" class="icheck"> Chemical</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="icheck"> General</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="icheck"> Manufacturing</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="icheck"> Industrial</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="icheck"> Medical</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" class="icheck"> Retail</label>
+        </div>
+
+        <!-- BEGIN FILTER BY TAGS -->
+
+        <div style="padding:20px"></div>
+        <h4>Filter by Tags</h4>
+          <span class="badge badge-pill badge-dark" style="margin-right: 5px;" *ngFor="let tag of patternTags">{{tag}}</span>
+      </div>
+
+
+
+
+
+<div class="col">
+  <!-- BEGIN SEARCH INPUT -->
+  <!-- END SEARCH INPUT -->
+  <div class="container">
+    <div class="row">
+      <div class="card patterncard" style="width: 25rem;height: 10rem;" *ngFor="let pattern of patterns ">
+        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+        <div class="card-body">
+          <h5 class="card-title"><a href="{{pattern.readmore}}" class="text-reset text-decoration-none"
+              target="_pattern">{{pattern.title}}</a></h5>
+          <p class="card-text">{{pattern.description}}</p>
+          <span class="badge badge-dark float-right">{{patternType[pattern.patternType]}}</span>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

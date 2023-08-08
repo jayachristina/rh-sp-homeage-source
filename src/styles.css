@@ -1,0 +1,14 @@
+@font-face {
+  font-family: RedHatText;
+  src: url(./app/assets/fonts/RedHatDisplay-Regular.ttf);
+}
+
+
+body {
+  margin: 0;
+  font-family: RedHatText,"Red Hat Text",Overpass,Overpass,"Helvetica Neue",Arial,sans-serif;
+  font-weight: 300;
+  line-height: 1.444;
+  color: #131313;
+  background-color: #fff;
+}
