@@ -1,0 +1,46 @@
+
+<div class="container-fluid">
+  <div class="row">
+
+    <!--Left column with filters-->
+    <div class="col-2">
+      <div class="card" *ngIf="showFilterCard">
+        <div class="card-body">
+          
+          <div>
+            <h6 class="float-start"> <strong> Filter By Tags: </strong> </h6>
+            <span class="badge bg-light text-dark float-end pointer" title="clear all filters" (click)="resetFilterTags();" *ngIf="this.filterTagsCount() > 0">
+            clear
+            </span>
+            <br>
+
+            <div *ngFor="let tag of uniqueModuleTags">
+              <h6>
+                <span class="badge displayFlex rounded-pill pointer me-1 mt-1"  (click)="toggleTag(tag);" [ngClass]="{'bg-secondary': tag.status,'white-pill': !tag.status}">
+                  {{tag.name}}
+                </span>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Left column with filters: end-->
+    
+    
+
+    
+    <!--Right column with modules card-->
+    <div class="col-10">
+      <div class="row m-0">
+        <app-module class=" col-3 d-flex align-items-stretch" *ngFor="let module of this.modulelist.modules" [module]="module" >
+          
+        </app-module>
+      </div>
+    </div>
+
+  </div>
+  <!--Right column with modules card: end-->
+
+
+</div>

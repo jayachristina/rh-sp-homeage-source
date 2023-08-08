@@ -1,0 +1,21 @@
+<div class="card mb-3">
+
+  <div class="card-body modulelist-wrapper">
+    <h5 class="card-title ">
+      {{module.title}}
+    </h5>
+
+    <p class="card-text">
+      {{module.description}}
+    </p>
+    <div class="container-fluid bottom p-0" style="width: 90%;">
+      <small class="text-muted badge rounded-pill bg-light filter-tag" *ngFor="let tag of module.tags">{{tag}} </small>
+    </div>
+
+    
+  </div>
+  <div class="card-footer ">
+    <a href="{{module.readmore}}" target="_blank">Read More</a> | <a href="{{module.readmore}}" target="_blank">Github</a>
+  </div>
+
+</div>
