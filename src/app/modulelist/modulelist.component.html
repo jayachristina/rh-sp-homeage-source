@@ -33,7 +33,7 @@
     <!--Right column with modules card-->
     <div class="col-10">
       <div class="row m-0">
-        <app-module class=" col-3 d-flex align-items-stretch" *ngFor="let module of this.modulelist.modules" [module]="module" >
+        <app-module class=" col-3 d-flex align-items-stretch" *ngFor="let module of getFilteredModules()" [module]="module" >
           
         </app-module>
       </div>
