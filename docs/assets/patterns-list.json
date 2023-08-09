@@ -1,0 +1,88 @@
+[{
+    "id" : "pattern-001",
+    "displayOrder": 1,
+    "title": "Change data capture",
+    "description": "Lorem Ipsum",
+    "readmore": "http://sdfsdf.com",
+    "tags": ["rhosak", "debezium", "cdc", "rhaf", "kafka"],
+    "supportability": "community",
+    "industry": "retail",
+    "patternType": "solution-pattern",
+    "additionalLinks" : [],
+    "image" : ""
+  },
+  {
+    "id" : "pattern-002",
+    "displayOrder": 2,
+    "title": "Event Streaming",
+    "description": "Lorem Ipsum",
+    "readmore": "http://sdfsdf.com",
+    "tags": ["rhosak", "debezium", "cdc", "rhaf", "kafka"],
+    "supportability": "community",
+    "industry": "retail",
+    "patternType": "solution-pattern",
+    "additionalLinks" : []
+  }
+  ,
+  {
+    "id" : "pattern-002",
+    "displayOrder": 2,
+    "title": "Event Streaming",
+    "description": "Lorem Ipsum",
+    "readmore": "http://sdfsdf.com",
+    "tags": ["rhosak", "debezium", "cdc", "rhaf", "kafka"],
+    "supportability": "community",
+    "industry": "retail",
+    "patternType": "solution-pattern",
+    "additionalLinks" : []
+  },
+  {
+    "id" : "pattern-002",
+    "displayOrder": 2,
+    "title": "Event Streaming",
+    "description": "Lorem Ipsum",
+    "readmore": "http://sdfsdf.com",
+    "tags": ["rhosak", "debezium", "cdc", "rhaf", "kafka"],
+    "supportability": "community",
+    "industry": "retail",
+    "patternType": "solution-pattern",
+    "additionalLinks" : []
+  },
+  {
+    "id" : "pattern-002",
+    "displayOrder": 2,
+    "title": "Event Streaming",
+    "description": "Lorem Ipsum",
+    "readmore": "http://sdfsdf.com",
+    "tags": ["rhosak", "debezium", "cdc", "rhaf", "kafka"],
+    "supportability": "community",
+    "industry": "retail",
+    "patternType": "solution-pattern",
+    "additionalLinks" : []
+  },
+  {
+    "id" : "pattern-002",
+    "displayOrder": 2,
+    "title": "Event Streaming",
+    "description": "Lorem Ipsum",
+    "readmore": "http://sdfsdf.com",
+    "tags": ["rhosak", "debezium", "cdc", "rhaf", "kafka"],
+    "supportability": "community",
+    "industry": "retail",
+    "patternType": "solution-pattern",
+    "additionalLinks" : []
+  },
+  {
+    "id" : "pattern-002",
+    "displayOrder": 2,
+    "title": "Event Streaming",
+    "description": "Lorem Ipsum",
+    "readmore": "http://sdfsdf.com",
+    "tags": ["rhosak", "debezium", "cdc", "rhaf", "kafka"],
+    "supportability": "community",
+    "industry": "retail",
+    "patternType": "solution-pattern",
+    "additionalLinks" : []
+  }
+  ]
+  
